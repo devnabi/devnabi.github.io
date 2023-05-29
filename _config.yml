@@ -13,7 +13,7 @@ github_username:  devnabi
 discord_invite: ytfSJh4w # Example: Discord server invite gg extension like in 'https://discord.gg/ytfSJh4w'
 linkedin_public_url: loremipsum # Example: For public profile 'www.linkedin.com/in/john-smith', 'john-smith' is your linkedin_public_url
 disqus_username: loremipsum
-profile_picture: file:///Users/ljhee812/Pictures/KakaoTalk_Photo_2023-05-20-21-55-05.jpeg
+profile_picture: https://68.media.tumblr.com/93f384858e9273d5b980b418e2f2f4d5/tumblr_o5i2aybLJG1uapsfmo2_250.png
 
 # Build settings
 markdown: kramdown
