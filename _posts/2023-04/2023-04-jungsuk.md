@@ -1,0 +1,231 @@
+---
+layout: post
+title:  "Javajungsuk"
+image: ''
+date:   2023-04
+tags:
+- Study
+description: ''
+categories:
+- Learn Java
+---
+
+```java
+package javajungsuk;
+
+public class Ch01_Hello {
+
+	public static void main(String[] args) {
+		System.out.println("Hello, world".toUpperCase()); // Firstjava 따라하기. 그냥 대문자로 해보고 싶었다.
+	}
+
+}
+```
+
+```java
+package javajungsuk;
+
+public class Ch02_1 {
+
+	public static void main(String[] args) {
+		// 2-1. 글자 출력
+		
+		// 맥 행단위 복사 : command + option + down
+		// println- 출력 후에 줄바꿈을 한다.
+		// print - 출력 후에 줄바꿈을 하지 않는다.
+		
+		System.out.println("앙녕, 자바야!");
+		System.out.println("앙녕, 자바야!222");
+		System.out.println("앙녕, 자바야!333");
+	}
+
+```
+
+```java
+package javajungsuk;
+
+public class Ch02_2 {
+
+	public static void main(String[] args) {
+		// 2-2 사칙연산
+		
+		System.out.println(5+3); // 덧셈
+		System.out.println(5-3); // 뺄셈
+		System.out.println(5*3); // 곱셈
+		System.out.println(5/3); // 나눗셈 : 우리가 원하는 나눗셈의 답은 소수다. 1로 출력되는 이유는 나중에.
+	}
+
+}
+
+```
+
+```java
+package javajungsuk;
+
+public class Ch02_3 {
+
+	public static void main(String[] args) {
+		// 2-3 변수의 선언과 저장
+		
+		// 변수 : 하나의 값을 저장할 수 있는 메모리 공간을 제공하는 것이다.
+		// 변수의 타입은 여러가지가 있고 int는 정수를 저장할 때 사용한다. (integer: 정수)
+		// = 등호는 '같다'가 아닌 '대입'이다. 대입연산자(=)
+		// 주의 할 것: 지역변수는 읽기 전에 초기화를 해줘야 한다.
+		
+		int x = 4, y = 2; // 변수를 선언해주면 x, y의 값만 바꿔줘도 빠르게 결과를 얻을 수 있다.
+		System.out.println(x+y); // 덧셈
+		System.out.println(x-y); // 뺄셈
+		System.out.println(x*y); // 곱셈
+		System.out.println(x/y); // 나눗셈
+	}
+
+}
+
+```
+
+```java
+package javajungsuk;
+
+public class Ch02_4 {
+
+	public static void main(String[] args) {
+		// 2-4 변수의 타입
+		
+		// 정수는 0, 100, -100 등을 말한다. 용량에 따라 맞춰서 사용하면 된다. 일반적으로는 int가 많이 쓰인다.
+		// 문자는 가나다, ABC같은 것을 말한다.
+		// 실수는 3.14, 0.1 등을 말한다.
+		// 논리는 값이 true, false만 저장할 수 있다.
+		
+		System.out.println("정수타입 - byte, int, short, long");
+		System.out.println("문자타입 - char");
+		System.out.println("실수타입 - float, double");
+		System.out.println("논리타입 - boolean");
+	}
+
+}
+```
+
+```java
+package javajungsuk;
+
+public class Ch02_5 {
+
+	public static void main(String[] args) {
+		// 2-5 상수와 리터럴
+		
+		// 지역변수는 선언을 하고 값을 초기화하지 않으면 읽을 때 에러가 발생한다. 선언과 초기화를 같이하는 게 편한듯...
+		
+		final int score;
+		// int score = 500;
+		score = 100;
+		System.out.print(score + 50);
+	}
+
+}
+
+```
+
+```java
+package javajungsuk;
+
+public class Ch02_6 {
+
+	public static void main(String[] args) {
+		// 2-6 리터럴의 차이와 접미사
+		
+		// char는 하나의 문자일 경우 홑 따옴표로 'A', String은 "가나다"와 같이 여러개의 문자일 경우 큰 따옴표로 저장이 가능하다.
+		// byte의 범위는 -128~127이다. int의 범위는 +-20억까지다.
+		// 리터럴의 타입 불일치는 [변수 > 리터럴] 이면 가능하다.
+		// 실수형은 정수형보다 저장 범위가 넓기 때문에 이런 경우 에러가 발생한다.>> long L = 3.14f;
+		
+		boolean power = true;
+		
+		byte b = 127;
+		
+		int oct = 010; // 8진수, 10진수로는 8
+		int hex = 0x10; // 16진수, 10진수로는 16
+		
+		long L = 10_000_000_000L; // int범위를 넘어가는 리터럴을 저장하려면 뒤에 L을 붙여준다. 대소문자 구별은 안한다.
+		
+		float f = 3.14f;
+		double d = 3.14; // d는 생략가능
+		
+		System.out.println(power);
+		
+		System.out.println(b);
+		
+		System.out.println(oct);
+		System.out.println(hex);
+		// 16진수로 출력하려면 printf를 사용하면 된다.
+		
+		System.out.println(L);
+		
+		System.out.println(f);
+		System.out.println(d);
+		
+		System.out.println(10.);
+		System.out.println(.10);
+		System.out.println(10f); // 접미사는 출력되지 않는다.
+		System.out.println(1e3); // 기호e는 10의 n제곱을 의미한다. 10의 3제곱을 하니 1000.
+	}
+
+}
+```
+
+```java
+package javajungsuk;
+
+public class Ch02_7a8 {
+
+	public static void main(String[] args) {
+		// 2-7, 2-8 문자, 문자열 리터럴, 문자열 결합
+		
+		// 문자열이란 문자의 연속이다.
+		// 문자열 결합을 할 때는 왼쪽에서 오른쪽으로 된다. "" + 7 >> "" + "7" >> "7"
+		
+		char ch = 'A'; // 홑 따옴표안에는 문자가 하나이상이면 에러가 난다.
+		int i = 'A'; // 변수 i에는 문자코드가 담긴 A가 저장이 된다. 문자A의 코드 : 65
+		
+		String s = ""; // 큰 따옴표는 빈 문자열(empty string)이 가능하다.
+		String s2 = "앙녕❣";
+		String s3 = 7+7 + ""; // 덧셈 기호를 이용하여 문자나 숫자를 결합할 수 있다. 숫자를 문자열로 만들어주고 결합이 되는 것이다.
+		String s4 = s2 + "❤" + s3;
+		
+		System.out.println(ch);
+		System.out.println(i);
+		
+		System.out.println(s);
+		System.out.println(s2);
+		System.out.println(s3);
+		System.out.println(s4);
+		
+	}
+
+}
+```
+
+```java
+package javajungsuk;
+
+public class Ch02_9 {
+
+	public static void main(String[] args) {
+		// 2-9 두 변수 바꾸기
+		
+		int x = 10;
+		int y = 20;
+		
+		int tmp; // 1. 빈 변수 만들기
+		
+		tmp = x; // 2. tmp에 x의 값을 저장
+		x = y;   // 3. y에 x의 값을 저장
+		y = tmp; // 4. y에 tmp의 값을 저장
+		
+		System.out.println("x=" + x);
+		System.out.println("y=" + y);
+		// 값만 출력되면 헷갈릴 수 있으니 앞에 문자를 붙여줬다.
+
+	}
+
+}
+```
