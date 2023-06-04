@@ -16,7 +16,7 @@ profile_picture: https://www.queerscifi.com/wp-content/uploads/2019/03/Screen-Sh
 # Build settings
 markdown: kramdown
 highlighter: rouge
-permalink: /:title/
+permalink: /:year-:month-:day/:title/
 
 # html minify
 compress_html:
