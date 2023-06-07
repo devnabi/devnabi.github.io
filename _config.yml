@@ -1,6 +1,6 @@
 # Site settings
-title: Lorem Ipsum - Web Developer
-description: "A blog about lorem ipsum ..."
+title: devnabi - baby Developer
+description: "A blog about devnabi🦋..."
 baseurl: "" # for test: remove string '/space-jekyll-template' to ''
 url: "https://devnabi.github.io" # for test: remove string 'http://devnabi.github.io' to '' but in production: 'https://yourusername.github.io'
 
@@ -10,7 +10,7 @@ user_title: devnabi
 email: klkl0812@naver.com
 github_username:  devnabi
 discord_invite: ytfSJh4w # Example: Discord server invite gg extension like in 'https://discord.gg/ytfSJh4w'
-disqus_username: loremipsum
+disqus_username: devnabi
 profile_picture: https://www.queerscifi.com/wp-content/uploads/2019/03/Screen-Shot-2019-03-27-at-7.12.03-AM-581x600.jpg
 
 # Build settings
@@ -45,7 +45,7 @@ links:
       key_trigger: 5
   section_2:
     - title: github
-      url: https://devnabi.github.io
+      url: https://github.com/devnabi
       new_tab: true
       key_trigger: g
     - title: search
@@ -54,12 +54,12 @@ links:
 
 # projects in header index
 projects:
-  - name: fluany
-    url: https://github.com/fluany/fluany
-  - name: vim-frontend
-    url: https://github.com/victorvoid/vim-frontend
-  - name: generator-capybara
-    url: https://github.com/victorvoid/generator-capybara 
+  # - name: fluany
+  #   url: https://github.com/fluany/fluany
+  # - name: vim-frontend
+  #   url: https://github.com/victorvoid/vim-frontend
+  # - name: generator-capybara
+  #   url: https://github.com/victorvoid/generator-capybara 
 
 # exclude my node related stuff
 exclude: ['package.json', 'src', 'node_modules']
