@@ -44,7 +44,7 @@ public class Main {
         System.out.println(hour * 60 + minute + "분");
 
         // 변수의 범위
-        int scope = 100; // 전역변수
+        int scope = 100;
 
         {
             int scope2 = 200; // 지역변수
