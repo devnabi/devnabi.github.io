@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  "Kitri - 변수와 타입"
+title:  "변수와 타입"
 image: ''
 date:   2023-07-19
 tags:
-- Study java
+- Kitri - Study java
 description: ''
 categories:
-- Learn Java
+- Kitri - Learn Java
 ---
 
 ```java
