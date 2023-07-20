@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "변수와 타입"
+title:  "변수와 타입(1)"
 image: ''
 date:   2023-07-19
 tags:
