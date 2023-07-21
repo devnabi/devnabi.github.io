@@ -18,11 +18,10 @@ import java.util.Scanner;
 public class Ex01 {
 
     public static void main(String[] args) {
-        // Ex1 : 자신의 이름을 키보드로 입력받아 콘솔 화면에 출력하는 프로그램을 구현하세요.
-        
+        // Ex1 : 자신의 이름을 키보드로 입력희
         Scanner sc = new Scanner(System.in);
-        sc.nextLine();
-        System.out.println("이주희");
+        String name = sc.nextLine();
+        System.out.println(name);
     }
 }
 
