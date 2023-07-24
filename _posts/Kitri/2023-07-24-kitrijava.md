@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Stack과 힙, 매서드 영역, 참조타입, 배열, ENUM"
+title:  "Stack & Heap, 매서드 영역, 참조타입, 배열, ENUM"
 image: ''
 date:   2023-07-24
 tags:
