@@ -13,7 +13,7 @@ categories:
 ```java
 package class06;
 
-public class Class02 {
+public class ComputerClass02 {
 
     public static void main(String[] args) {
         // 2023-07-26 클래스(2)
@@ -25,8 +25,8 @@ public class Class02 {
         // 오버로딩을 하는 이유 : 매개변수 타입을 다양하게 받기 위해 사용한다.
 
         // 객체생성하고 메서드 호출을 출력하기
-        Class02 class02 = new Class02();
-        System.out.println(class02.countWord("Hello World!"));
+        ComputerClass02 computerclass02 = new ComputerClass02();
+        System.out.println(computerclass02.countWord("Hello World!"));
 
         // Sum1() 메서드를 사용하기 위해 배열 선언
         int[] arr = {1, 2, 3, 4, 5};
