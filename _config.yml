@@ -54,9 +54,9 @@ links:
 
 # projects in header index
 projects:
-    - name: Haera
+  - name: Haera
     url: https://github.com/devnabi/Haera
-    - name: Kitri - Memo.re
+  - name: Kitri - Memo.re
     url: https://github.com/hyunayeo/memo_re
 
 # exclude my node related stuff
